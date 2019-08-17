@@ -119,7 +119,7 @@ contains(names, 'Colt', function(result){
 */
 
 function uniq (arr, cb){
-  var deDuplicated = arr.filter(function(cur, ind, arr){return arr.indexOf(cur) == ind});
+  var deDuplicated = arr.filter(function(el, i, arr){return arr.indexOf(el) == i});
   cb(deDuplicated)
 }
 
